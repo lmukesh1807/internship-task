@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <ul>
+        <li>
+            <a class="top" href="#home">Login</a>
+        </li>
+        <img src="plus.png" alt="Plus Symbol" style="width:40px;height:40px;margin-top:8px;">
+        <h3 Style="color:white">Compliance Support
+        </h3>
+    </ul>
+
+
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Support')">Support</button>
+        <button class="tablinks" onclick="openCity(event, 'Help')">Help</button>
+        <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+    </div>
+
+    <div id="Support" class="tabcontent">
+        <div class="content-wrap">
+            <div class="left-things">
+                <h2 id="pad">Hi.
+                </h2>
+                <input type="text" name="search">
+                <u>
+                    <h3>Reference to Polices</h3>
+                </u>
+                <h4>Guide 1</h4>
+                <h4>Guide 2</h4>
+                <h4>Guide 3</h4>
+           
+                <h2>ANSWER HELP</h2>
+                <u>
+                    <h3>Best practices</h3>
+                </u>
+                <h4>Historical Chat 1&nbsp;&nbsp;&nbsp;&nbsp;Tip 1</h4>
+                <h4>Historical Chat 2&nbsp;&nbsp;&nbsp;&nbsp;Tip 2</h4>
+                <h4>Historical Chat 3&nbsp;&nbsp;&nbsp;&nbsp;Tip 3</h4>
+
+            </div>
+            <div class="right-things">
+                <iframe src="html\popular\textarea.html" frameborder="0"></iframe>
+                <iframe src="html\popular\textarea.html" frameborder="0"></iframe>
+                <iframe src="html\popular\textarea.html" frameborder="0"></iframe>
+                <h3 align="center">Customer Profile</h3>
+                <textarea></textarea>
+
+                <iframe id="chatbot" src="chatbot\bot.html" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div id="Help" class="tabcontent">
+            <h3>Help</h3>
+            <p>how to i help you.</p>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Mukesh</p>
+        </div>
+
+        <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+
+
+
+</body>
+
+</html>
